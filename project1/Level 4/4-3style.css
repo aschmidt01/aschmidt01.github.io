@@ -1,0 +1,30 @@
+header {
+	border: 2px solid;
+	position: absolute;
+	width: 500px;
+	top: 0px;
+	padding: 10px;
+	text-transform: uppercase;
+	font-size: 8px;
+}
+h2 {
+	font-family: cursive;
+	float: left;
+}
+h4 {
+	float: right;
+	font-family: verdana;
+	font-weight: lighter;
+}
+body {
+	padding: 200px;
+	padding-top: 50px;
+	width: 450px;
+	font-family: verdana;
+	line-height: 30px;
+}
+li {
+	border: 1px dotted;
+	width: 300px;
+	padding: 10px;
+}

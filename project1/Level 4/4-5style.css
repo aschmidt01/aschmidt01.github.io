@@ -1,0 +1,21 @@
+body {
+	top: 25;
+	padding: 15px;
+	width: 350px;
+	position: absolute;
+	font-family: Bodoni, serif;
+	text-transform: lowercase;
+}
+header {
+	
+	top: 0;
+	float: right;
+}
+h3 {
+	font-family: Helvetica, sans-serif; 
+	 line-height: 10px;
+	 letter-spacing: 1em;
+}
+#break {
+	text-align: center;
+}

@@ -1,0 +1,17 @@
+header{
+	position: fixed;
+	top: 0px;
+	border: 1px dashed;
+	padding: 15px;
+	width: 800px;
+}
+h2 {
+	float: right;
+}
+body {
+	position: absolute;
+	padding: 80px;
+	border: 5px;
+	border-style: hidden;
+	width: 550px;
+}

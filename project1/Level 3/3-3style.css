@@ -1,0 +1,23 @@
+header {
+	border: 2px solid;
+	position: absolute;
+	width: 500px;
+	top: 0px;
+	padding: 15px;
+}
+h2 {
+	float: left;
+}
+h4 {
+	float: right;
+}
+body {
+	padding: 200px;
+	padding-top: 50px;
+	width: 450px;
+}
+li {
+	border: 1px dotted;
+	width: 300px;
+	padding: 10px;
+}

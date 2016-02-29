@@ -1,0 +1,14 @@
+header {
+	position: fixed;
+	top: 0px;
+}
+body {
+	margin: 50px;
+	border: 25px solid;
+	position: absolute;
+	padding: 50px;
+	width: 250px;
+	float: left;
+}
+
+

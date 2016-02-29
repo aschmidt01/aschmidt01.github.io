@@ -1,0 +1,29 @@
+header {
+	top: 0px;
+	padding: 25px;
+	position: fixed;
+}
+#first {
+	border: 3px dotted;
+	padding: 15px;
+	padding-bottom: 3px;
+	width: 700px;
+	position: fixed;
+	top: 125px;
+}
+body{
+	position: absolute;
+	top: 250px;
+	width: 1000px;
+	padding: 15px;
+}
+#last {
+	border: 3px dotted;
+	padding-top: 3px;
+	padding-bottom: 2px;
+	padding-left: 15px;
+	padding-right: 15px;
+	width: 700px;
+	position: fixed;
+	top: 575px;
+}

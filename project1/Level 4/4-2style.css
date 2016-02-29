@@ -1,0 +1,24 @@
+header{
+	position: fixed;
+	top: 0px;
+	border: 1px dashed;
+	padding: 15px;
+	width: 800px;
+}
+h2 {
+	float: right;
+	font-family: Garamond, serif;
+	font-weight: bolder;
+	letter-spacing: 1.5em;
+	text-transform: lowercase;
+}
+body {
+	position: absolute;
+	padding: 80px;
+	border: 5px;
+	border-style: hidden;
+	width: 550px;
+	font-family: Helvetica, sans-serif;
+	line-height: 20px;
+
+}

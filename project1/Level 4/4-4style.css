@@ -1,0 +1,40 @@
+header {
+	top: 0px;
+	padding: 25px;
+	position: fixed;
+	font-size: 25px;
+	font-size: Times, serif;
+}
+#first {
+	border: 3px dotted;
+	padding: 15px;
+	padding-bottom: 3px;
+	width: 700px;
+	position: fixed;
+	top: 125px;
+	background-color: white;
+	font-family: cursive;
+	color: teal;
+}
+body{
+	position: absolute;
+	top: 250px;
+	width: 700px;
+	padding: 15px;
+	font-family: Times;
+	color: gray;
+}
+#last {
+	border: 3px dotted;
+	padding-top: 3px;
+	padding-bottom: 2px;
+	padding-left: 15px;
+	padding-right: 15px;
+	width: 700px;
+	position: fixed;
+	top: 575px;
+	background-color: white;
+	/* I know we weren't supposed to use this one, but I thought it would look cooler this way */
+	font-family: cursive;
+	color: teal;
+}
