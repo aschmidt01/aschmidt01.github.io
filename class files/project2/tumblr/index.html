@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{Title}</title>
+        <style>
+            body {
+                background: black;
+                font-family: "Univers LT Std 47 Light Condensed", Helvetica, sans-serif;
+                color: gray;
+                margin: 25px 50px 25px;
+            }
+            h1 {
+               font-family: "Univers LT Std 47 Light Condensed", Helvetica, sans-serif;
+                color: gray;
+                display: inline;
+                padding-top: 30px;
+                padding-right: 30px;
+            }
+            .pop {
+                 font-family: "Star Jedi","Univers LT Std 47 Light Condensed", Helvetica, sans-serif;
+                color: #cf1c45;
+            }
+            h2 {
+                font-size: 25px;
+            }
+            .description {
+                float: center;
+                line-height: 10px;
+                padding-top: 30px;
+                width: 200px;
+            }
+            .posts {
+                padding-top: 50px;
+                padding-left: 70px;
+                padding-bottom: 50px;
+                width: 500px;
+            }
+            .text-block {
+               
+            }
+            .image-block {
+                
+            }
+            .video-block {
+               
+            }
+            .reblog_button, .like_button {
+                display: block;
+                float: right;
+                width: 5px;
+                padding: 20px;
+                
+         }
+            a {
+                color: #cf1c45; 
+            }
+            ul {
+                list-style: none;
+            }
+            nav {
+                float: right;
+                width: 200px;
+                height: 500px;
+                line-height: 25px;
+                padding: 30px;
+                padding-top: 0px;
+                position: fixed;
+                top: 30px;
+                right: 500px;
+            }
+            .glitter {
+                height: 400px;
+                position: fixed;
+                float: right;
+                right: 500px;
+            }
+            .tags {
+                display: block;
+            }
+        </style>
+        
+    </head>
+   
+    <body>
+        <nav>
+            {block:PreviousPage}
+                <a href="{PreviousPage}">Previous</a>
+           {/block:PreviousPage}<br>
+           {block:NextPage}
+                <a href="{NextPage}">Next</a>
+           {/block:NextPage}<br>
+           <a href="/archive">Archive</a><br>
+           {block:AskEnabled}
+                <a href="{AskLabel}">why did I do this?</a>
+           {/block:AskEnabled}<br>
+           {block:SubmissionsEnabled}
+                <a href="{SubmitLabel}">throw your trash away</a>
+           {/block:SubmissionsEnabled}
+           <div class="glitter">
+                <br><img src="http://www.glitterdelight.com/glitters/1613KFvlmPbWRz-GlitterDelightDotCom.gif" alt="Glitter Delight - Glitter Graphics Maker - Create Myspace, Hi5, Orkut Glitters"  border="0"><br>
+            </div>
+        </nav>
+        
+        <h1>
+            <em> we need to talk about </em>
+            <span class="pop"> kylo </span>
+        </h1>
+        
+        {block:description}
+            <div class="description">
+                {description}
+            </div>
+        {/block:description}
+       
+       <div class="posts">
+            {block:Posts}
+        
+                {block:Text}
+                   <div class="text-block">
+                       <h2><a href= "{Permalink}">{title}</a></h2> 
+                    {body}
+                   {ReblogButton}{LikeButton}
+                    {TimeAgo}
+                    {block:PostNotes} 
+                        {PostNotes}
+                    {/block:PostNotes}
+                    {block:HasTags}
+                    <ul class="tags">
+                        {block:Tags}
+                            <li>
+                                <a href="{TagURL}">{Tag}</a>
+                            </li>
+                        {/block:Tags}
+                    </ul>
+                {/block:HasTags}
+                   </div>
+                {/block:Text}
+            
+                {block:Photo}
+                    <div class="image-block">
+                        <img src="{PhotoURL-500}" alt="{PhotoAlt}">
+                    </div>
+                    {ReblogButton}{LikeButton}
+                    {TimeAgo}
+                    {block:PostNotes} 
+                        {PostNotes}
+                    {/block:PostNotes}
+                    {block:HasTags}
+                    <ul class="tags">
+                        {block:Tags}
+                            <li>
+                                <a href="{TagURL}">{Tag}</a>
+                            </li>
+                        {/block:Tags}
+                    </ul>
+                {/block:HasTags}
+                {/block:Photo}
+                
+                {block:Video} 
+                    <div class="video-block">
+                    {Video-400}
+                    {ReblogButton}{LikeButton}
+                    {TimeAgo}
+                    {block:PostNotes} 
+                        {PostNotes}
+                    {/block:PostNotes}
+                    {block:HasTags}
+                    <ul class="tags">
+                        {block:Tags}
+                            <li>
+                                <a href="{TagURL}">{Tag}</a>
+                            </li>
+                        {/block:Tags}
+                    </ul>
+                    </div>
+                {/block:Video}
+                
+            {block:NoteCount}
+                    {NoteCountWithLabel}
+                {/block:NoteCount}    
+            {/block:Posts}
+       </div>
+       <footer>
+           
+       </footer>
+    </body>
+</html>

@@ -1,0 +1,221 @@
+/*CODE FROM CLASS TO PULL FROM ---
+
+ul.thumbnails li.thumb a img {
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+}
+
+ul.thumbnails li.thumb a:hover img {
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+}
+ */
+
+/* Header & Navigation */
+header img {
+    /*border: 1px solid gray;*/
+    max-width: 650px;
+}
+nav.navbar {
+    /* Delete border once block is positioned */
+    /*border: 1px solid gray;*/
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-bottom: 30px;
+    max-width: 650px;
+}
+ul.navbar-nav li {
+    padding-right: 30px;
+    list-style: none;
+    text-decoration: none;
+    display: inline-block;
+}
+
+header nav ul.navbar-nav li a.active {
+    color: gray;
+}
+
+header nav ul.navbar-nav li a {
+    text-decoration: none;
+    color: #6fba67;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-menu {
+    padding: 10px;
+    display: none;
+    position: absolute;
+    background-color: black;
+    text-align: left;
+}
+/* Links inside the dropdown */
+.dropdown-menu a {
+    padding: 0;
+    text-decoration: none;
+    display: block;
+}
+/* Change color of dropdown links on hover */
+.dropdown-menu a:hover {
+    background-color: ;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+img {
+    margin: 10px 0px 10px;
+}
+
+/* ALEX'S SETUP */
+
+html {
+    box-sizing: border-box;
+}
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+/* Global Styles */
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, arial, sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.4em;
+}
+img {
+    max-width: 100%;
+}
+/* Typography */
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+    /* or font-family: 'Ubuntu', sans-serif; */
+    font-size: 16px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+p {
+    color: gray;
+}
+
+footer p {
+    font-size: 12px;
+}
+
+h1 {
+    font-size: 1.7em;
+    color: #6fba67;
+}
+
+h2 {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #6fba67;
+}
+
+p.title {
+    color: #6fba67;
+}
+
+p a {
+    text-decoration: none;
+    color: gray;
+}
+
+p a:hover {
+    color: #6fba67;
+}
+
+.summary p a {
+    text-decoration: none;
+    color: gray;
+}
+
+.summary p a:hover {
+    color: #6fba67;
+}
+
+/* Layout */
+.content {
+    max-width: 980px;
+    margin: 60px auto;
+    padding: 20px;
+}
+
+.character-bio {
+    margin-left: 100px;
+    margin-right: 100px;
+    position: relative;
+    display: ;
+}
+.character-bio div {
+    clear: both;
+}
+
+.character-bio img {
+    float: left;
+}
+
+.character-bio h2 {
+    margin-left: 200px;
+    margin-top: 20px
+}
+.character-bio p {
+    margin-left: 200px;
+    margin-top: 10px;
+}
+
+.secondary {
+    margin-top: 75px;
+}
+
+.secondary h1 {
+    margin-bottom: 10px;
+}
+.secondary img {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.summary {
+    max-width: 650px;
+    margin-left: 150px;
+    position: relative;
+    
+}
+.summary p {
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.container {
+    max-width: 980px;
+    margin: 60px auto;
+}
+ul.thumbnails {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+ul.thumbnails li {
+    margin: 15px;
+    width: 280px;
+}
+
+/* Footer */
+
+footer {
+    max-width: 980px;
+    margin: 125px auto;
+    text-align: center;
+}
+/* Media Queries */
+@media screen and (max-width: 780px) {
+
+}
